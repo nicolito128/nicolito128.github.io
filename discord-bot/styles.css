@@ -22,9 +22,10 @@ body {
 
 .container .command-list {
     display: inline-block;
-    max-width: 350px;
-    margin: 3%;
-    float: top;
+    width: 31.9%;
+    padding: 1em;
+    margin: 0.5%;
+    vertical-align: top
 }
 
 .command-list p {
@@ -38,3 +39,17 @@ body {
 }
 
 .args {color: steelblue}
+
+@media (max-width: 480px) {
+    .container .command-list {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .container .command-list {
+        display: block;
+        width: 100%;
+    }
+}
