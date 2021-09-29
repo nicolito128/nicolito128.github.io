@@ -1,7 +1,6 @@
 
 body {
     min-width: 100%;
-    min-height: 100%;
 
     background: #ffffff;
     color: rgb(66, 67, 78);
@@ -45,7 +44,8 @@ main {
 
 .container {
     cursor: pointer;
-    margin: 3rem;
+    margin: 3rem auto;
+    margin-left: 30px;
     width: 500px;
     padding-bottom: 1rem;
     border-radius: 6px;
@@ -75,4 +75,17 @@ main {
 
 .container:active {
     border: 3px solid skyblue;
+}
+
+@media (max-width: 400px), (max-height: 712px) {
+
+    .container {
+        width: 80vw;
+        display: block;
+    }
+
+    .container img {
+        width: 80vw;
+        height: 25vh;
+    }
 }
