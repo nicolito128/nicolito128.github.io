@@ -5,39 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nicolás Serna - Desarrollador</title>
+    <title>Developer - Nicolas Abel Serna</title>
     <link rel="shortcut icon" href="favicon-128.png">
     <link rel="stylesheet" href="./styles/normalize.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./styles/main.css" type="text/css" />
 </head>
 <body>
 
     <header>
-        <div class="logo-container">
-            <img class="logo" src="favicon-128.png">
-            <div class="name-title">
-                <h1>Nicolás Serna</h1>
-            </div>
-
+        <div class="container">
+            <p class="logo">NicoDev</p>
+            <nav>
+                <div class="nav-el">
+                    <a href="#">Inicio</a>
+                </div>
+                <div class="nav-el">
+                    <a href="#sobre-mi">Sobre mí</a>
+                </div>
+                <div class="nav-el">
+                    <a href="#mis-proyectos">Mis Proyectos</a>
+                </div>
+                <div class="nav-el">
+                    <a href="#contactame">Contactame</a>
+                </div>
+            </nav>
         </div>
     </header>
+
+    <section id="hero">
+        <div class="title">
+            <h1>Nicolas Serna <br>FullStack Dev</h1>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <div class="img-container"></div>            
+            <div class="text">
+                <h2>¿Quién es <span class="hey">Nicolas?</span></h2>
+            <p class="text"> Soy un desarrollador junior de Salta, Argentina. Me especializo en tecnologías Web y Backend, mis puntos fuertes están en mis desarrollos con Javascript y Golang. En la actualidad estoy cursando la carrera "Tecnicatura Universitaria en Programación", en la Universidad Nacional de Salta (UNSa). La programación y la informática me han fascinado desde que tengo memoría, por lo que intento perfeccionar mis conocimientos día a día.</p>
+            </div>
+        </div>
+    </section>
     
-    <main role="main">
-        <a target=_blank href="https://github.com/nicolito128/Login-BasicStyle">
-            <div class="container css">
-                <img src="https://camo.githubusercontent.com/881bb175479d8555c5b6fb32e8bab055f9b46b0b05119d38fe4db7db62aac1cf/68747470733a2f2f696d6167652e70726e747363722e636f6d2f696d6167652f786b34537a306976537853794f7134382d41336959672e706e67">
-                <h2 class="container-title">Login Style - Diseño</h2>
+    <section id="mis-proyectos">
+        <div class="container">            
+            <h2>Mis <span class="hey">Proyectos</span></h2>
+
+            <div class="cards">
+            <div class="card">
+                <h3>Tasks API - Golang & PostgreSQL</h3>
+                <p>Una sencilla API escrita en el lenguaje de programación Golang, utilizando Gin Web Framework y PostgreSQL. Provee de diferentes endpoints: get, post, put, delete.</p>
+                <a target="_blank" href="https://github.com/nicolito128/tasks-api">
+                    <button>+ Info</button>
+                </a>
             </div>
-        </a>
-        
-        <a target=_blank href="https://github.com/nicolito128/muphasa">
-            <div class="container bot">
-                <img src="bot.jpg">
-                <h2 class="container-title">Muphasa - Discord Bot</h2>
+            <div class="card">
+                <h3>Income-Expenses - NodeJS & MySQL</h3>
+                <p>Aplicación web con NodeJS y Express donde se pueden añadir nuevos "ingresos" y "egresos", almacenandolos en una base de datos MySQL.</p>
+                <a target="_blank" href="https://github.com/nicolito128/income-expenses">
+                    <button>+ Info</button>
+                </a>
             </div>
-        </a>
-        
-    </main>
+            <div class="card">
+                <h3>Muphasa BOT - TypeScript</h3>
+                <p>[Proyecto Abandonado] Un BOT para el servicio de chat Discord. Escrito en TypeScript y pensado para proporcionar diversos comandos de utilidad.</p>
+                <a target="_blank" href="https://github.com/nicolito128/muphasa-old-djv12">
+                    <button>+ Info</button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactame">
+        <div class="container">
+            <h2>Contactame</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/nicolas-abel-serna/" class="linkedin-i">
+                        <i class="fa-brands fa-linkedin" title="linkedin profile"></i>
+                    </a></li>
+                <li>
+                    <a target="_blank" href="https://github.com/nicolito128" class="github-i">
+                        <i class="fa-brands fa-github-alt"  title="github profile"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Nicolas Abel Serna</p>
+        </div>
+    </footer>
 
 </body>
 </html>
