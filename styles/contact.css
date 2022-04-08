@@ -1,0 +1,33 @@
+#contactame .container {
+    text-align:center;
+}
+
+#contactame li {
+    margin: 12px 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+}
+
+#contactame li a {
+    color: #1f1f1f;
+    transition: color 0.5s;
+}
+
+#contactame li .linkedin-i:hover {
+    color: blue;
+}
+
+#contactame li .github-i:hover {
+    color: green;
+}
+
+#contactame li .email-i:hover {
+    color: darkred;
+}
+
+#contactame li .cv-i:hover {
+    color: yellowgreen;
+}

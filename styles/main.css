@@ -1,3 +1,7 @@
+/*
+    * Main styles for general purposes
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -15,6 +19,7 @@ h2 { font-size: 2.7em; }
 h3 { font-size: 2em; }
 p { font-size: 1.25em; }
 ul { list-style: none; }
+.sub-title { font-size: 0.9em; }
 
 button {
     font-size: 1.5em;
@@ -46,158 +51,10 @@ button:active {
     margin: auto;
 }
 
-header {
-    background-color: rgb(245, 245, 245);
-}
-
-header .logo {
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: rgb(41, 154, 189);
-    font-size: 1.5em;
-}
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a {
-    padding: 7px 14px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover {
-    color: rgb(20, 132, 167); 
-    transition: color 0.5s;
-}
-
-header .nav-el:hover {
-    border-bottom: 5px solid rgb(20, 132, 167);
-    transition: ease-out 0.5s;
-}
-
-#hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background: linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.65), 
-        rgba(0,0,0,0.65)
-    ),
-    url("../media/code-screen.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transition: all ease-in-out 2.5s;
-}
-
-#hero h1 {
-    color: #ffffff;
-}
-
+/* #sobre-mi section */
 #sobre-mi .container {
     text-align: center;
     padding: 200px 15px;
-}
-
-#mis-proyectos {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    text-align: center;
-}
-
-#mis-proyectos .container {
-    padding: 150px 15px;
-}
-
-#mis-proyectos p {
-    display: none;
-}
-
-#mis-proyectos .card {
-    padding: 50px;
-    background-position: center center;
-    background-size: cover;
-    margin: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.card:nth-child(1) {
-    background: linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.8), 
-        rgba(0,0,0,0.8)
-    ),
-    url("../media/go-gopher.jpeg");
-}
-
-.card:nth-child(2) {
-    background: linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.8), 
-        rgba(0,0,0,0.8)
-    ),
-    url("../media/income-expenses-pr.png");
-}
-
-.card:nth-child(3) {
-    background: linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.8), 
-        rgba(0,0,0,0.8)
-    ),
-    url("../media/discord.jpg");
-}
-
-#contactame .container {
-    text-align:center;
-}
-
-#contactame li {
-    margin: 12px 10px;
-    padding: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 3em;
-}
-
-#contactame li a {
-    color: #1f1f1f;
-    transition: color 0.5s;
-}
-
-#contactame li .linkedin-i:hover {
-    color: blue;
-}
-
-#contactame li .github-i:hover {
-    color: green;
-}
-
-#contactame li .email-i:hover {
-    color: darkred;
-}
-
-#contactame li .cv-i:hover {
-    color: yellowgreen;
 }
 
 footer {
@@ -215,85 +72,4 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-
-@media (min-width: 720px) {
-    header {
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav {
-        flex-direction: row;
-        align-items: center;
-        padding-bottom: 0;
-        padding-right: 30px;
-    }
-
-    #hero h1 {
-        font-size: 5em;
-    }
-
-    #sobre-mi .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #sobre-mi h2 {
-        margin: 0px;
-        flex-direction: column;
-    }
-
-    #sobre-mi p {
-        width: 100%;
-        padding-left: 30px;
-        max-width: 700px;
-        text-align: justify;
-        flex-direction: column;
-    }
-
-    #sobre-mi h2 {
-        margin-top: 0px;
-    }
-
-    #sobre-mi .img-container {
-        background-image: url("../media/me.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: 250px;
-        height: 400px;
-    }
-
-    #mis-proyectos .cards {
-        display: flex;
-        justify-content: center;
-    }
-
-    #mis-proyectos p {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        border-radius: 16px;
-        font-size: 1.2em;
-    }
-
-    #mis-proyectos h3 {
-        margin-top: 0;
-    }
-
-    #mis-proyectos .card {
-        padding: 25px;
-        margin-bottom: 25px;
-    }
-
-    #mis-proyectos .cards button {
-        align-self: flex-end;
-    }
 }

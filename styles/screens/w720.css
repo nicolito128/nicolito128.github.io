@@ -1,0 +1,80 @@
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #sobre-mi .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #sobre-mi h2 {
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    #sobre-mi p {
+        width: 100%;
+        padding-left: 30px;
+        max-width: 700px;
+        text-align: justify;
+        flex-direction: column;
+    }
+
+    #sobre-mi h2 {
+        margin-top: 0px;
+    }
+
+    #sobre-mi .img-container {
+        background-image: url("../../media/me.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 250px;
+        height: 400px;
+    }
+
+    #mis-proyectos .cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mis-proyectos p {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 1.2em;
+    }
+
+    #mis-proyectos h3 {
+        margin-top: 0;
+    }
+
+    #mis-proyectos .card {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    #mis-proyectos .cards button {
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,49 @@
+#mis-proyectos {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+}
+
+#mis-proyectos .container {
+    padding: 150px 15px;
+}
+
+#mis-proyectos p {
+    display: none;
+}
+
+#mis-proyectos .card {
+    padding: 50px;
+    background-position: center center;
+    background-size: cover;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.8)
+    ),
+    url("../media/go-gopher.jpeg");
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.8)
+    ),
+    url("../media/income-expenses-pr.png");
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.8)
+    ),
+    url("../media/discord.jpg");
+}
