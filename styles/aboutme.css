@@ -1,3 +1,9 @@
+/* #sobre-mi section */
+#sobre-mi .container {
+    text-align: center;
+    padding: 200px 15px;
+}
+
 #mis-proyectos {
     background-color: #1f1f1f;
     color: #ffffff;

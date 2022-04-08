@@ -51,12 +51,6 @@ button:active {
     margin: auto;
 }
 
-/* #sobre-mi section */
-#sobre-mi .container {
-    text-align: center;
-    padding: 200px 15px;
-}
-
 footer {
     background-color: #1f1f1f;
     color: rgb(200, 200, 200);
