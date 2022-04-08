@@ -55,6 +55,7 @@
     #mis-proyectos .cards {
         display: flex;
         justify-content: center;
+        align-items: flex-end;
     }
 
     #mis-proyectos p {
