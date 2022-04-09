@@ -13,7 +13,7 @@
     url("../media/code-screen.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center left;
     transition: all ease-in-out 2.5s;
 }
 
