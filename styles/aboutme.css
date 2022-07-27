@@ -25,9 +25,12 @@
     margin: 25px;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    min-height: 330px;
+    min-width: 150px;
+    max-width: 300px;
 }
 
-.card:nth-child(1) {
+.cards .card.tasks-api{
     background: linear-gradient(
         0deg, 
         rgba(0,0,0,0.8), 
@@ -36,7 +39,7 @@
     url("../media/go-gopher.jpeg");
 }
 
-.card:nth-child(2) {
+.cards .card.income-expenses {
     background: linear-gradient(
         0deg, 
         rgba(0,0,0,0.8), 
@@ -45,11 +48,29 @@
     url("../media/income-expenses-pr.png");
 }
 
-.card:nth-child(3) {
+.cards .card.muphasa-bot {
     background: linear-gradient(
         0deg, 
         rgba(0,0,0,0.8), 
         rgba(0,0,0,0.8)
     ),
     url("../media/discord.jpg");
+}
+
+.cards .card.waffer-bot {
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.8)
+    ),
+    url("../media/waffles.jpg");
+}
+
+.cards .card.superimage {
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.8)
+    ),
+    url("../media/effect.jpg");
 }
